@@ -1,0 +1,298 @@
+@media (max-width: 800px) {
+    nav {
+        animation:none;
+    }
+    
+    body {
+        font-family: "Poppins" sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .navbar {
+        animation: none;
+        border: 2px solid black;
+        border-radius: 2vh;
+        height: 150px;
+        align-items: center;
+    }
+    .navbar .imagem {
+        height: 115px;
+    }
+    .navbar ul li a {
+        font-size: 1.8rem;
+    }
+
+    .navbar .button {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .personalite {
+        width: 150vh;
+        padding: 80px;
+        height: 2000px;
+    }
+
+    .personalite img {
+        height: 600px;
+        padding: 20px;
+        margin-left: -80px;
+    }
+
+    .personalite h2 {
+        font-size: 65px;
+        color: rgb(135, 132, 132);
+        height: 180px;
+        font-weight: bolder;
+    }
+
+    .personalite p {
+        font-size: 60px;
+        margin: 70px;
+        text-align: center;
+        
+        color: whitesmoke
+    }
+
+    .personalite h3 {
+        font-size: 55px;
+        color: rgb(154, 153, 153);
+    }
+
+    .personalite .personalite-button {
+        padding: 25px;
+        font-size: 60px;
+    }
+
+    #Bestchoice {
+        width: 150vh;
+        font-size: 45px;
+        height: 1800px;
+    }
+
+    .section-blocks .icon-check {
+        height: 250px;
+    }
+
+    .section-blocks1 .icon-check {
+        height: 150px;
+    }
+
+    .section-blocks {
+        font-size: 41px;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .section-blocks1 {
+        font-size: 41px;
+        padding: 20px;
+        text-align: justify;
+    }
+
+    #Beneficios {
+        width: 150vh;
+        height: 2400px;
+    }
+
+    #Beneficios .title-benefit {
+        font-size: 80px;
+        padding: 40px;
+    }
+
+    #Beneficios .text-benefit {
+        font-size: 45px;
+    }
+
+    #Beneficios .sentence-benefit {
+        font-size: 55px;
+    }
+
+    .container-beneficios {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container-beneficios .icon-benefit {
+        height: 150px;
+        margin-left: 220px;
+    }
+
+    .blocks {
+        margin: 25px;
+        padding: 20px;
+    }
+
+    .blocks h2 {
+        font-size: 85px;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .blocks p {
+        font-size: 45px;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #Historia {
+        width: 150vh;
+        height: 1650px;
+    }
+
+    #Historia h2 {
+        font-size: 90px;
+        padding: 35px;
+    }
+
+    #Historia p {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 750;
+    }
+
+    #Historia img {
+        margin: auto;
+        padding: 30px;
+        height: 650px;
+        width: 95%;
+    }
+
+    #Cursos {
+        width: 150vh;
+        height: 5200px;
+    }
+
+    #Cursos h2 {
+        font-size: 70px;
+        padding: 60px;
+        margin: 15px;
+    }
+
+    #Cursos img {
+        height: 500px;
+        width: 85%;
+    }
+
+    #Cursos .imagem-css {
+        height: 500px;
+        width: 750px;
+        margin-left: -113px;
+    }
+
+    tag-cursos h3 {
+        font-size: 75px;
+        margin: -50px;
+    }
+
+    tag-cursos1 h3 {
+       font-size: 75px;
+       margin: -50px; 
+    }
+
+    tag-cursos2 h3 {
+        font-size: 75px;
+        margin-left: -53px; 
+    }
+
+    tag-cursos, tag-cursos1, tag-cursos2 p {
+        font-size: 48px;
+        text-align: center;
+        margin: 50px;
+    }
+
+    #Cursos .imagem-javascript {
+        height: 500px;
+        width: 85%;
+        margin-left: -40px;
+    }
+
+    .container-cursos {
+        display: block;
+        padding: 30px;
+    }
+
+    tag-cursos, tag-cursos1, tag-cursos2 {
+        width: 45%;
+    }
+
+    tag-cursos2 p {
+        margin-left: -25px;
+    }
+
+    .container-cursos1 {
+        display: block;
+        padding: 30px;
+    }
+
+    cursos-profissionais h3 {
+        font-size: 75px;
+        margin: 50px;
+        padding: 30px;
+    }
+
+    cursos-profissionais1 h3 {
+        font-size: 75px;
+        margin: 50px;
+    }
+
+    #Cursos .imagem-python {
+        height: 500px;
+        width: 45%;
+    }
+
+    #Cursos .imagem-logica {
+        height: 500px;
+        width: 45%;
+    }
+
+    cursos-profissionais,cursos-profissionais1  p {
+        font-size: 45px;
+        text-align: center;
+        margin: 65px;
+    }
+
+    #Sobre {
+        width: 150vh;
+        height: 3800px;
+    }
+
+    #Sobre h2 {
+        font-size: 85px;
+        padding: 45px;
+    }
+
+    .social-content {
+        display: block;    
+        text-align: center;
+    }
+
+    .social-content p {
+        font-size: 48px;
+        text-align: justify;
+        padding: 30px;
+    }
+
+    .Daniel {
+        margin: 60px;
+        height: 1050px;
+    }
+
+    .social-media {
+        height: 200px;
+        width: 150vh;
+        align-items: center;
+    }
+
+    .social-media a {
+        font-size: 39px;
+    }
+
+    .social-media i {
+        font-size: 50px;
+    }
+}   
+
+

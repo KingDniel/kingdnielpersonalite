@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: all 0.5s ease;
+}
+
+nav {
+    background-color: rgb(69, 65, 65);
+    padding: 30px;
+}
+
+main {
+    font-family: "Fira Sans", sans-serif;
+}
+
+@keyframes appear {
+    from 0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to 100% {
+        transform: translateY(0px);
+    }
+}
+
+.navbar {
+    animation: appear 1.2s ease-in-out forwards;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+
+    padding: 30px;
+
+    background-color: whitesmoke;
+
+    border: 2px solid whitesmoke;
+    border-radius: 1vw;
+    scroll-behavior: smooth;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    margin-top: 2px;
+}
+
+.navbar .imagem {
+    height: 100px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li:not(:last-child) {
+    margin-right: 28px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: gold;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: rgb(69, 65, 65);
+    text-decoration: underline;
+}
+
+.navbar .button {
+    border: 2px solid  rgb(69, 65, 65);
+    
+
+    padding: 10px;
+    text-decoration: none;
+
+    color: gold;
+    font-weight: 600;
+    background-color: rgb(69, 65, 65);
+
+    transition-property: border-radius, text-decoration;
+    transition-duration: 0.5s, 1s;
+
+}
+
+.navbar .button:hover {
+    color: gold;
+    text-decoration: underline;
+    background-color: rgb(69, 65, 65);
+    border-radius: 2vh;
+}
+
+.personalite {
+    text-align: center;
+    padding: 40px;
+    font-family: "Fira Sans", sans-serif;
+    background-image: url(../imagens/fundo-preto-dourado.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute ;
+    height: 900px;
+
+    align-items: center;
+    
+}
+
+@keyframes animator {
+    0% {
+        transform: translateY(-250px);
+        opacity: 2;
+
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animationes {
+    0% {
+        transform: translate3d(100px)
+    }
+}
+
+.personalite h2 {
+    animation: animator 2s ease-in;
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+    color: rgb(69, 65, 65);
+
+    font-weight: 700;
+}
+
+.personalite p {
+    animation: animator 2s ease-in;
+    font-size: 22px;
+    margin: 10px;
+    color: gold;
+    font-weight: 700;
+}
+
+.personalite h3 {
+    animation: animator 2s ease-in;
+    font-size: 25px;
+    margin: 10px;
+    padding: 30px;
+
+    color:rgb(69, 65, 65);
+    font-weight: bolder;
+}
+
+.personalite img {
+    height: 250px;
+    animation: animator 2s ease-in-out forwards
+}
+
+.personalite .personalite-button {
+    
+    margin: 15px;
+    border: 2px solid rgb(69, 65, 65);
+    padding: 10px;
+    
+    text-decoration: none;
+    background-color: rgb(69, 65, 65);
+    color: gold;
+    font-weight: 600;
+
+    font-size: 20px;
+
+    transition-property: border-radius, text-decoration;
+    transition-duration: 0.5s;
+    animation: animator 2s ease-in;
+}
+
+.personalite .personalite-button:hover {
+    animation: animator 2s ease-in;
+    color: gold;
+    text-decoration: underline;
+    background-color: rgb(69, 65, 65);
+    border-radius: 2vh;
+}
+
+hr {
+    margin: 30px;
+}
+
+@keyframes showing {
+    0% {
+      transform: translatex(-300px);
+      opacity: 2;  
+    }
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+#Bestchoice {
+    font-size: 25px;
+    
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    height: 950px;;
+    font-family: "Fira Sans", sans-serif;;
+    
+    padding: 30px;
+    animation: showing 1.2s ease-in forwards;
+}
+
+
+.section-blocks .icon-check  {
+    fill: gold;
+    height: 50px;
+    width: 50%;
+    margin: 15px;
+    
+}
+
+.section-blocks1 .icon-check {
+    fill: gold;
+    height: 50px;
+    width: 50%;
+    margin: 15px;
+}
+
+.section-blocks {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 30px;
+    padding: 20px; 
+}
+
+.section-blocks1 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 30px;
+    padding: 20px; 
+
+    margin: 30px;
+}
+
+block-first, block-second, block-third {
+    display: inline-block;
+    text-align: center;
+    margin-left: 65px;
+}
+
+block-fourth, block-fiveth {
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+}
+
+#Bestchoice h1 {
+    color: gold;
+    text-decoration: underline;
+    padding: 45px;
+}
+
+
+#Bestchoice {
+    background-image: url(..//imagens/fundo-preto.avif);
+    background-size: cover;
+}
+
+#Beneficios {
+    background-color: whitesmoke;
+    height: 800px;
+}
+
+#Beneficios .title-benefit {
+    color: gold;
+    padding: 30px;
+    text-align: center;
+    
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#Beneficios .text-benefit {
+    text-align: center;
+    color: rgb(69, 65, 65);
+    padding: 10px;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#Beneficios .sentence-benefit {
+    color: gold;
+    text-align: center;
+    padding: 20px;
+
+    margin: 10px;
+
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;;
+}
+
+.container-beneficios {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.container-beneficios .icon-benefit {
+    fill: gold;
+    height: 80px;
+    width: 60%;
+    margin-left: 70px;
+}
+
+.blocks {
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 2vh;
+
+    padding: 30px;
+}
+
+.blocks h2 {
+    color: gold;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.blocks p {
+    text-align: center;
+    color: rgb(69, 65, 65);
+    font-weight: bolder;
+
+    padding: 10px;
+    font-size: 16px;
+}
+
+#Historia {
+    background-image: url(../imagens/fundo-branco-dourado.avif);
+    background-size: cover;
+    height: 900p    x;
+    padding: 5px;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Historia h2 {
+    text-align: center;
+    color: gold;
+    font-weight: 700;
+    ;
+    font-size: 45px;
+    text-decoration: underline;
+    margin: 10px;
+;
+}
+
+#Historia p {
+   text-align: center;
+   padding: 10px;
+   margin: 20px;
+   font-size: 20px;
+   color: rgb(69, 65, 65);
+   font-weight: 700;
+}
+
+#Historia img {
+    height: 400px;
+    width: 40%;
+    padding: 30px;
+}
+
+#Cursos {
+    background-image: url(../imagens/fundo-preto-cursos.avif);
+    background-size: cover;
+    color: white;
+    height: 900px;
+}
+
+#Cursos h2 {
+    text-align: center;
+    padding: 30px;
+    color: gold;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#Cursos img {
+    height: 200px;
+    width: 40%;
+    margin: 20px;
+}
+
+#Cursos .imagem-css {
+    height: 200px;
+    width: 60%;
+}
+
+#Cursos .imagem-javascript {
+    height: 205px;
+    width: 35%;
+}
+
+tag-cursos, tag-cursos1, tag-cursos2 {
+    display: inline-block;
+    text-align: center;
+    margin-left: 70px;
+}
+
+tag-cursos h3 {
+    color: gold;
+    font-weight: 700;
+
+    font-size: 30px;
+}
+
+tag-cursos1 h3 {
+    color: gold;
+    font-weight: 700;
+
+    font-size: 30px;
+}
+
+tag-cursos2 h3 {
+    color: gold;
+    font-weight: 700;
+
+    font-size: 30px;
+}
+
+tag-cursos, tag-cursos1, tag-cursos2 p {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.container-cursos {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.container-cursos1 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+cursos-profissionais h3 {
+    color: gold;
+    font-weight: 700;
+
+    font-size: 30px;
+}
+
+cursos-profissionais1 h3 {
+    color: gold;
+    font-weight: 700;
+
+    font-size: 30px;
+}
+
+cursos-profissionais,cursos-profissionais1  p {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#Cursos .imagem-python {
+    height: 200px;
+    width: 35%;
+}
+
+#Cursos .imagem-logica {
+    height: 200px;
+    width: 35%;
+}
+
+#Sobre {
+    background-image: url(../imagens/fundo-branco-cinzelado.avif);
+    background-size: cover;
+    height: 1000px;
+}
+
+#Sobre h2 {
+    color: gold;
+    text-align: center;
+    padding: 45px;
+    
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.social-content {
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.social-content p {
+    padding: 50px;
+    margin: 20px;;
+    font-size: 20px;
+    text-align: justify;;
+}
+
+
+.Daniel {
+    height: 700px;
+    border-radius: 3vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);;
+}
+
+.social-media {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    background-color: rgb(69, 65, 65);
+}
+
+.social-media a {
+    text-decoration: none;
+    color: gold;
+    font-weight: 700;
+    align-items: center;
+    font-size: 20px;
+}
+
+.social-media i {
+    font-size: 30px;
+    cursor: pointer;
+}
